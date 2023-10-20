@@ -101,6 +101,7 @@
     bottom
     cmake
     git
+    gh
     helix
     vieb
     zellij
