@@ -4,7 +4,9 @@
   home.stateVersion = "23.05";
   home.packages = with pkgs; [
     zsh
+    helix
   ];
 
-   programs.zsh = import ./programs/zsh.nix;
+  programs.zsh = import ./programs/zsh.nix;
+  programs.helix = import ./programs/helix.nix;
 } 
