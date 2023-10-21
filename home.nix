@@ -6,14 +6,5 @@
     zsh
   ];
 
-   programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    enableAutosuggestions = true;
-    shellAliases = {
-      _ = "sudo";
-      h = "history";
-      hg = "history | grep ";
-    };
-  };
+   programs.zsh = import ./programs/zsh.nix;
 } 
