@@ -6,9 +6,11 @@
     zsh
     helix
     kitty
+    lazygit
   ];
 
   programs.zsh = import ./programs/zsh.nix;
   programs.helix = import ./programs/helix.nix;
   programs.kitty = import ./programs/kitty.nix;
+  programs.direnv = import ./programs/direnv.nix;
 } 

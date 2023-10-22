@@ -109,6 +109,7 @@
     lazygit
     _1password-gui
     kitty
+    direnv
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
