@@ -12,7 +12,7 @@
       macos_option_as_alt = true;
     };
     font = {
-      size = 40; 
+      size = 30; 
       name = "JetBrains Mono";
     };
     keybindings = {
