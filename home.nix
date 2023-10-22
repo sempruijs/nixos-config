@@ -5,8 +5,10 @@
   home.packages = with pkgs; [
     zsh
     helix
+    kitty
   ];
 
   programs.zsh = import ./programs/zsh.nix;
   programs.helix = import ./programs/helix.nix;
+  programs.kitty = import ./programs/kitty.nix;
 } 
