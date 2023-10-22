@@ -7,7 +7,12 @@
     helix
     kitty
     lazygit
+    nix
   ];
+
+  nix = {
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
 
   programs.zsh = import ./programs/zsh.nix;
   programs.helix = import ./programs/helix.nix;
