@@ -82,7 +82,7 @@
   users.users.sem = {
     isNormalUser = true;
     description = "sem";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       firefox
       kate
@@ -139,4 +139,6 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
 
+  # enable docker
+  virtualisation.docker.enable = true;
 }
