@@ -244,7 +244,24 @@ $env.config = {
     render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
 
     hooks: {
-        pre_prompt: [{ null }] # run before the prompt is shown
+        pre_prompt: [{ ||
+                let direnv = (direnv export json | from json | default {})
+                if ($direnv | is-empty) {
+                    return
+                }
+                $direnv
+                | items {|key, value|
+                   {
+                      key: $key
+                      value: (if $key in $env.ENV_CONVERSIONS {
+                        do ($env.ENV_CONVERSIONS | get $key | get from_string) $value
+                      } else {
+                          $value
+                      })
+                    }
+                } | transpose -ird | load-env
+            }]
+
         pre_execution: [{ null }] # run before the repl input is run
         env_change: {
             PWD: [{|before, after| null }] # run if the PWD environment is different since the last repl input
