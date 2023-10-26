@@ -3,7 +3,6 @@
   home.homeDirectory = "/home/sem";
   home.stateVersion = "23.05";
   home.packages = with pkgs; [
-    zsh
     helix
     kitty
     lazygit
@@ -16,7 +15,6 @@
   };
 
   programs.nushell = import ./programs/nushell/nu.nix;
-  programs.zsh = import ./programs/zsh.nix;
   programs.helix = import ./programs/helix.nix;
   programs.kitty = import ./programs/kitty.nix;
   programs.direnv = import ./programs/direnv.nix;
