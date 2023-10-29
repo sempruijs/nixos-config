@@ -8,9 +8,9 @@
     key = "~/.ssh/id_rsa.pub";
   };
   extraConfig = {
-    # color.ui = true;
-    # github.user = "sempruijs";
+    color.ui = true;
+    github.user = "sempruijs";
     gpg.format = "ssh";
-    # init.defaultBranch = "main";
+    init.defaultBranch = "main";
   };
 }
