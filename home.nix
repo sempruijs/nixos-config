@@ -15,7 +15,6 @@
     settings.experimental-features = [ "nix-command" "flakes" ];
   };
 
-  programs.git = import ./programs/git.nix;
   programs.nushell = import ./programs/nushell/nu.nix;
   # programs.helix = import ./programs/helix.nix;
   programs.kitty = import ./programs/kitty.nix;
