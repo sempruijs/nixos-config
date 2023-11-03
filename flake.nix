@@ -21,6 +21,7 @@
               users.sem = {
                 imports = [
                   ./home.nix
+                  ./home-modules/helix.nix
                 ];
               };
             };
