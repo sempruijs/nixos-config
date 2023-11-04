@@ -23,6 +23,7 @@
                   ./home.nix
                   ./home-modules/helix.nix
                   ./home-modules/git.nix
+                  ./home-modules/kitty.nix
                 ];
               };
             };

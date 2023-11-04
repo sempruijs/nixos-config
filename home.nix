@@ -16,7 +16,6 @@
   };
 
   programs.nushell = import ./programs/nushell/nu.nix;
-  # programs.helix = import ./programs/helix.nix;
-  programs.kitty = import ./programs/kitty.nix;
+  # programs.kitty = import ./programs/kitty.nix;
   programs.direnv = import ./programs/direnv.nix;
 } 
