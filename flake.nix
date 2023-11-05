@@ -20,13 +20,13 @@
               useUserPackages = true;
               users.sem = {
                 imports = [
-                  ./home-modules/nix.nix
                   ./home.nix
-                  ./home-modules/helix.nix
-                  ./home-modules/git.nix
-                  ./home-modules/kitty.nix
-                  ./home-modules/direnv.nix
-                  ./home-modules/nushell/nu.nix
+                  ./hm/nix.nix
+                  ./hm/helix.nix
+                  ./hm/git.nix
+                  ./hm/kitty.nix
+                  ./hm/direnv.nix
+                  ./hm/nushell/nu.nix
                 ];
               };
             };
