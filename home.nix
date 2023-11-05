@@ -14,6 +14,4 @@
   nix = {
     settings.experimental-features = [ "nix-command" "flakes" ];
   };
-
-  programs.nushell = import ./programs/nushell/nu.nix;
 } 
