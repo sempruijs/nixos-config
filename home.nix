@@ -1,7 +1,7 @@
 { config, pkgs, ...}: {
   home.username = "sem";
   home.homeDirectory = "/home/sem";
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
   home.packages = with pkgs; [
     helix
     kitty
