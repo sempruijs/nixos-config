@@ -24,6 +24,7 @@
                   ./home-modules/helix.nix
                   ./home-modules/git.nix
                   ./home-modules/kitty.nix
+                  ./home-modules/direnv.nix
                 ];
               };
             };

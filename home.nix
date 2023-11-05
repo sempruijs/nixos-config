@@ -16,6 +16,4 @@
   };
 
   programs.nushell = import ./programs/nushell/nu.nix;
-  # programs.kitty = import ./programs/kitty.nix;
-  programs.direnv = import ./programs/direnv.nix;
 } 
