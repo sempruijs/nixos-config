@@ -7,9 +7,15 @@
        url = "github:nix-community/home-manager";
        inputs.nixpkgs.follows = "nixpkgs";
     };
+    darwin = {
+        url = "github:lnl7/nix-darwin/master";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   }; 
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
+  outputs = { self, nixpkgs, home-manager, darwin, ... }@inputs: {
+
+    # nixos
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
         modules = [ 
@@ -32,6 +38,35 @@
             };
           }
        ];
+    };
+
+    # darwin
+    darwinConfigurations = {
+        default = darwin.lib.darwinSystem {
+            system = "aarch64-darwin";
+            modules = [
+                ./darwin/darwin-configuration.nix
+                home-manager.darwinModules.home-manager {
+                    users.users.sem = {
+                        name = "sem";
+                        home = "/Users/sem";
+                    };
+                    home-manager.useGlobalPkgs = true;
+                    home-manager.useUserPackages = true;
+                    home-manager.users.sem = {
+                      imports = [
+                        ./darwin/home.nix
+                        ./hm/helix.nix
+                        ./hm/kitty.nix
+                      ];
+                    };
+                    home-manager.extraSpecialArgs = { 
+                        inherit inputs; 
+                        # pkgs-unstable = import inputs.nixpkgs-unstable { system = "aarch64-darwin"; config.allowUnfree = true; };
+                    };
+                }
+            ];
+        };
     };
   };
 }
