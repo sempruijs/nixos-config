@@ -1,6 +1,6 @@
 # NixOS configuration
 
-Reproducable configuration with flakes
+Reproducable configuration with flakes for nixos and darwin.
 
 ### About this configuration
 
