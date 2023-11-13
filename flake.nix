@@ -26,7 +26,7 @@
               useUserPackages = true;
               users.sem = {
                 imports = [
-                  ./home.nix
+                  ./nixos/home.nix
                   ./hm/nix.nix
                   ./hm/helix.nix
                   ./hm/git.nix
