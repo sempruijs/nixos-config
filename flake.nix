@@ -33,11 +33,27 @@
             modules = [
               ./darwin/darwin-configuration.nix
               home-manager.darwinModules.home-manager {
-                # users.users.sem = {
-                #   name = "sem";
-                #   home = "/Users/sem";
-                # };
-                home-manager = import ./home-manager.nix;
+                users.users.sem = {
+                  name = "sem";
+                  home = "/Users/sem";
+                };
+                home-manager.useGlobalPkgs = true;
+                home-manager.useUserPackages = true;
+                home-manager.users.sem = {
+                  imports = [
+                    ./darwin/home.nix
+                    ./hm/nix.nix
+                    ./hm/helix.nix
+                    ./hm/git.nix
+                    ./hm/kitty.nix
+                    ./hm/direnv.nix
+                    ./hm/nushell/nu.nix
+                  ];
+                };
+                home-manager.extraSpecialArgs = { 
+                    inherit inputs; 
+                    # pkgs-unstable = import inputs.nixpkgs-unstable { system = "aarch64-darwin"; config.allowUnfree = true; };
+                };
               }
             ];
         };
