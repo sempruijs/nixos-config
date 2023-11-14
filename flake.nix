@@ -33,11 +33,11 @@
             modules = [
               ./darwin/darwin-configuration.nix
               home-manager.darwinModules.home-manager {
-                users.users.sem = {
-                  name = "sem";
-                  home = "/Users/sem";
-                };
-                home-manager = import ./home-manager.nix
+                # users.users.sem = {
+                #   name = "sem";
+                #   home = "/Users/sem";
+                # };
+                home-manager = import ./home-manager.nix;
               }
             ];
         };
