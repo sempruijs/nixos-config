@@ -4,12 +4,19 @@
     homeDirectory = "/home/sem";
     stateVersion = "23.11";
     packages = with pkgs; [
-      helix
-      kitty
-      lazygit
       nushell
-      nix
+      bottom
+      cmake
       git
+      gh
+      helix
+      vieb
+      zellij
+      neofetch
+      lazygit
+      _1password-gui
+      kitty
+      direnv
     ];
   };
 } 
