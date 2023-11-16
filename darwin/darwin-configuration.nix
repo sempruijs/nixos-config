@@ -22,6 +22,7 @@
     element-desktop
     vscodium
     kitty
+    utm
   ];
 
   environment.variables = {
@@ -42,6 +43,8 @@
   # nix.package = pkgs.nix;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
+
+  # do NOT remove this line. Everything will break and you have nothing from the nix store
   programs.zsh.enable = true;  # default shell on catalina
   # programs.fish.enable = true;
 
