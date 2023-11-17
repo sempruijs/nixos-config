@@ -1,6 +1,6 @@
-nixos:
+switch-nixos:
 	sudo nixos-rebuild switch --flake .#nixos
 
-darwin:
+switch-darwin:
 	darwin-rebuild switch --flake ".#default"
 

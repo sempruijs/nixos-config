@@ -22,7 +22,6 @@
     element-desktop
     vscodium
     kitty
-    utm
   ];
 
   environment.variables = {
