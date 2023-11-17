@@ -5,8 +5,10 @@
 alias lg = lazygit
 alias zj = zellij
 
+# rust alias
 alias cr = cargo run
 alias ck = cargo check
+alias ct = cargo test
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
