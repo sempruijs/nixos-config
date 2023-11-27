@@ -3,10 +3,12 @@
   
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
+
     home-manager = {
        url = "github:nix-community/home-manager";
        inputs.nixpkgs.follows = "nixpkgs";
     };
+
     darwin = {
         url = "github:lnl7/nix-darwin/master";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -19,9 +21,9 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
         modules = [ 
-          ./nixos/configuration.nix
+          ./nixos/orb/configuration.nix
           home-manager.nixosModules.home-manager {
-            home-manager = import ./home-manager.nix;
+            home-manager = import ./nixos/orb/home-manager.nix;
           }
        ];
     };
