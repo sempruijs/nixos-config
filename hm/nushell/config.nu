@@ -4,6 +4,7 @@
 
 alias lg = lazygit
 alias zj = zellij
+alias mx = iamb -C ~/.config
 
 # rust alias
 alias cr = cargo run

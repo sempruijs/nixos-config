@@ -3,6 +3,7 @@
     home.stateVersion = "22.05";
 
     home.packages = (with pkgs; [
+        iamb
         nushell
         git 
         git-lfs
@@ -24,7 +25,6 @@
         bat
         unixtools.watch
         qrencode
-        gomuks
         zellij
     ]);
 
