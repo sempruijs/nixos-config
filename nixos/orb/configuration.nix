@@ -61,6 +61,7 @@ with lib;
   users.users.sem = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    shell = pkgs.nushell;
   };
 
   # List packages installed in system profile. To search, run:
@@ -73,6 +74,8 @@ with lib;
     git
     nushell
     zellij
+    direnv
+    lazygit
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -18,14 +18,14 @@
         tree
         nodePackages.webpack
         nodePackages.webpack-cli
-        ruby
-        cocoapods
         slides
         ripgrep
         bat
         unixtools.watch
         qrencode
         zellij
+        pandoc
+        bottom
     ]);
 
     # Hide "last login" message on new terminal.
