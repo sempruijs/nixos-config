@@ -11,6 +11,8 @@ alias cr = cargo run
 alias ck = cargo check
 alias ct = cargo test
 
+alias h = cd /Users/sem
+
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
