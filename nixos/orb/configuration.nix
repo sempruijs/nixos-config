@@ -76,7 +76,8 @@ with lib;
     zellij
     direnv
     lazygit
-    neofetch q
+    neofetch
+    tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
