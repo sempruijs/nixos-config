@@ -25,7 +25,7 @@
       keys.normal = {
         space.q = ":wqa";
         space.Q = ":qa!";
-        space.W = ":w";
+        space.W = ":w!";
       };
       keys.insert = {
         h.h = "normal_mode";
