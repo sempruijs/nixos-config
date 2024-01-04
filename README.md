@@ -7,12 +7,9 @@ Reproducable configuration with flakes for nixos and darwin.
 I use a apple silicon mac and I use NixOS inside a VM with [utm](https://github.com/utmapp/UTM).
 This configuration uses home manager.
 Home manager generates configuration files.
-
 These configuration files are generated through ```.nix``` files.
 They are defined as home modules and they are stored in the a folder called ```hm```
 All of these home modules are loaded in ```flake.nix```
-
-I want to migrate my [nix-darwin-config](https://github.com/sempruijs/nix-darwin-config) into this repository in the near future.
 
 If you want to use NixOS and you are visually impaired, forking this configuration is not a bad idea.
 This repository does not contain well configured screen-readers, but it does have: 
@@ -26,10 +23,15 @@ It also has direnv configured to work well with flakes so you can start working 
 
 ### Using the configuration
 
+I really like [orb stack](https://orbstack.dev). 
+Orb stack is a hypervisor that integrates very well with macos.
+
+You can set up a vm in minutes and it uses rosetta for fast compilation to x86-64 archtitecture so you can build docker images for both arctectures on a aarch64 mac with near native preformance.
+It is not open-source and it has no gui. Everything is in the terminal.
+
 1. Clone the repo
 
 ```shell
-cd ~
 git clone git@github.com:sempruijs/nixos-config.git
 cd nixos-config
 ```
