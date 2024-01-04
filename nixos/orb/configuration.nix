@@ -15,6 +15,9 @@ with lib;
       ./orbstack.nix
     ];
 
+    # enable docker
+    virtualisation.docker.enable = true;
+
      nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # networking.hostName = mkForce "nixos"; # Overwrite the hostname.
@@ -60,7 +63,7 @@ with lib;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.sem = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.nushell;
   };
 
