@@ -75,6 +75,7 @@ with lib;
     curl
     helix
     git
+    gh
     nushell
     zellij
     direnv
