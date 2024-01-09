@@ -21,9 +21,9 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
         modules = [ 
-          ./nixos/orb/configuration.nix
+          ./nixos/configuration.nix
           home-manager.nixosModules.home-manager {
-            home-manager = import ./nixos/orb/home-manager.nix;
+            home-manager = import ./nixos/home-manager.nix;
           }
        ];
     };
