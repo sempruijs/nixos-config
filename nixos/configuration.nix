@@ -116,4 +116,8 @@ with lib;
   documentation.enable = true;
   documentation.nixos.enable = true;
   environment.noXlibs = false;
+
+  environment.variables = {
+    EDITOR = "hx";
+  };
 }
