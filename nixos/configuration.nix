@@ -83,6 +83,7 @@ with lib;
     neofetch
     tree
     bat
+    bottom
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -116,8 +117,4 @@ with lib;
   documentation.enable = true;
   documentation.nixos.enable = true;
   environment.noXlibs = false;
-
-  environment.variables = {
-    EDITOR = "hx";
-  };
 }
