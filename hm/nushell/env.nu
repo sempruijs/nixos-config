@@ -36,9 +36,12 @@ def create_right_prompt [] {
 }
 
 # Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = {|| create_left_prompt }
+# $env.PROMPT_COMMAND = {|| create_left_prompt }
 # FIXME: This default is not implemented in rust code as of 2023-09-08.
-$env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
+# $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
+
+$env.PROMPT_COMMAND_RIGHT = ""
+$env.PROMPT_COMMAND = "> "
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
