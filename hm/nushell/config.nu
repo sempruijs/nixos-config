@@ -643,7 +643,7 @@ $env.config = {
             name: move_right_or_take_history_hint
             modifier: control
             keycode: char_f
-            mode: emacs
+            mode: [ emacs, vi_insert, vi_normal]
             event: {
                 until: [
                     {send: historyhintcomplete}
