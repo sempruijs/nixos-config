@@ -85,6 +85,7 @@ with lib;
     bat
     bottom
     gomuks
+    flyctl
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
