@@ -58,6 +58,7 @@ with lib;
   # hardware.pulseaudio.enable = true;
 
    systemd.services.cardano-node = {
+    enable = false;
     wantedBy = [ "multi-user.target" ];
     after = [ "network.target" ];
     description = "Cardano node";
