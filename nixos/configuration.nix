@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ modulesPath, config, pkgs, lib, ... }:
+{ modulesPath, config, pkgs, lib, inputs, ... }:
 
 with lib;
 
@@ -90,7 +90,6 @@ with lib;
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     curl
-    helix
     git
     gh
     nushell
@@ -103,6 +102,8 @@ with lib;
     bottom
     gomuks
     flyctl
+
+    inputs.helix.packages.aarch64-linux.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

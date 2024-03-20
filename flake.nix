@@ -13,13 +13,16 @@
         url = "github:lnl7/nix-darwin/master";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    helix.url = "github:helix-editor/helix";
   }; 
 
-  outputs = { self, nixpkgs, home-manager, darwin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, darwin, helix, ... }@inputs: {
 
     # nixos
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
+        specialArgs = {inherit inputs;};
         modules = [ 
           ./nixos/configuration.nix
           home-manager.nixosModules.home-manager {
