@@ -104,6 +104,7 @@ with lib;
     flyctl
 
     inputs.helix.packages.aarch64-linux.default
+    inputs.randaam-cli.packages.aarch64-linux.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -15,6 +15,7 @@
     };
 
     helix.url = "github:helix-editor/helix";
+    randaam-cli.url = "github:sempruijs/randaam-cli";
   }; 
 
   outputs = { self, nixpkgs, home-manager, darwin, helix, ... }@inputs: {
