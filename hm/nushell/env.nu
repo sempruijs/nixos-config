@@ -17,6 +17,16 @@ def create_left_prompt [] {
     $path_segment | str replace --all (char path_sep) $"($separator_color)/($path_color)"
 }
 
+def --env yy [...args] {
+	let tmp = (mktemp -t "yazi-cwd.XXXXX")
+	yazi ...$args --cwd-file $tmp
+	let cwd = (open $tmp)
+	if $cwd != "" and $cwd != $env.PWD {
+		cd $cwd
+	}
+	rm -fp $tmp
+}
+
 def create_right_prompt [] {
     # create a right prompt in magenta with green separators and am/pm underlined
     let time_segment = ([
