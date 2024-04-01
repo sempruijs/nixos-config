@@ -4,7 +4,7 @@ Reproducable configuration with flakes for nixos and darwin.
 
 ### About this configuration
 
-I use a apple silicon mac and I use NixOS inside a VM with [utm](https://github.com/utmapp/UTM).
+I use [orbstack](https://orbstack.dev/) with NixOS on an apple silicon mac.
 This configuration uses home manager.
 Home manager generates configuration files.
 These configuration files are generated through ```.nix``` files.
