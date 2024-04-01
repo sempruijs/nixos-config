@@ -57,23 +57,6 @@ with lib;
   # sound.enable = true;
   # hardware.pulseaudio.enable = true;
 
-   systemd.services.cardano-node = {
-    enable = false;
-    wantedBy = [ "multi-user.target" ];
-    after = [ "network.target" ];
-    description = "Cardano node";
-    serviceConfig = {
-      ExecStart = "${pkgs.nix}/bin/nix run github:sempruijs/cn-stake-pool#packages.x86_64-linux.cardano-node -- run --topology /Users/sem/nixos-config/cn-stake-pool/mainnet/topology.json --database-path /Users/sem/nixos-config/cn-stake-pool/mainnet/db --socket-path /Users/sem/nixos-config/cn-stake-pool/mainnet/node.socket --port 3001 --config /Users/sem/nixos-config/cn-stake-pool/mainnet/config.json";
-      # Restart = "on-failure";
-      RestartSec = 5;
-      StartLimitBurst = 3;
-      StartLimitInterval = 10;
-    };
-    # environment = {
-    #   RUST_LOG = "info,voyager=debug,chain_utils=debug";
-    # };
-  };
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
