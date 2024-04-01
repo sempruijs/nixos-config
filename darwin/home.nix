@@ -3,7 +3,6 @@
     home.stateVersion = "22.05";
 
     home.packages = (with pkgs; [
-        iamb
         nushell
         git 
         git-lfs
@@ -26,6 +25,7 @@
         zellij
         pandoc
         bottom
+        yazi
     ]);
 
     # Hide "last login" message on new terminal.
