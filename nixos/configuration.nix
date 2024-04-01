@@ -102,10 +102,10 @@ with lib;
     bottom
     gomuks
     flyctl
-    yazi
 
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default
+    inputs.yazi.packages.aarch64-linux.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

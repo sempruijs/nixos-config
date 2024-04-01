@@ -16,9 +16,10 @@
 
     helix.url = "github:helix-editor/helix";
     randaam-cli.url = "github:sempruijs/randaam-cli";
+    yazi.url = "github:sxyazi/yazi";
   }; 
 
-  outputs = { self, nixpkgs, home-manager, darwin, helix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, ... }@inputs: {
 
     # nixos
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
