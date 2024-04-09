@@ -85,6 +85,7 @@ with lib;
     bottom
     gomuks
     flyctl
+    delta
 
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default
