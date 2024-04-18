@@ -32,7 +32,7 @@
               modules = [ 
                 ./nixos/${platform}/configuration.nix
                 home-manager.nixosModules.home-manager {
-                  home-manager = import ./nixos/${platform}/home-manager.nix;
+                  home-manager = import ./home-manager.nix;
                 }
               ];
             };
