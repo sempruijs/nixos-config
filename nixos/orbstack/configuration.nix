@@ -72,6 +72,7 @@ with lib;
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
+    slides
     curl
     git
     gh
@@ -86,6 +87,7 @@ with lib;
     gomuks
     flyctl
     delta
+    emacs
 
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default

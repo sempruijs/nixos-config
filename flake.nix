@@ -26,9 +26,9 @@
         system = "aarch64-linux";
         specialArgs = {inherit inputs;};
         modules = [ 
-          ./nixos/configuration.nix
+          ./nixos/orbstack/configuration.nix
           home-manager.nixosModules.home-manager {
-            home-manager = import ./nixos/home-manager.nix;
+            home-manager = import ./nixos/orbstack/home-manager.nix;
           }
        ];
     };
@@ -54,6 +54,7 @@
                     ./hm/git.nix
                     ./hm/kitty.nix
                     ./hm/direnv.nix
+                    ./hm/lazygit.nix
                     ./hm/nushell/nu.nix
                   ];
                 };
