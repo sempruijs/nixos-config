@@ -30,7 +30,7 @@
               system = "aarch64-linux";
               specialArgs = {inherit inputs;};
               modules = [ 
-                ./nixos/${platform}/configuration.nix
+                ./${platform}/configuration.nix
                 home-manager.nixosModules.home-manager {
                   home-manager = import ./home-manager.nix;
                 }
