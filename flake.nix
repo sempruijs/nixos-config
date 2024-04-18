@@ -41,6 +41,9 @@
         orbstack = mkSystem {
           platform = "orbstack";
         };
+        utm = mkSystem {
+          platform = "utm";
+        };
       };
 
     # darwin
