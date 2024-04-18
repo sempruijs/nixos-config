@@ -20,18 +20,28 @@
   }; 
 
   outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, ... }@inputs: {
-
-    # nixos
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
-        system = "aarch64-linux";
-        specialArgs = {inherit inputs;};
-        modules = [ 
-          ./nixos/orbstack/configuration.nix
-          home-manager.nixosModules.home-manager {
-            home-manager = import ./nixos/orbstack/home-manager.nix;
-          }
-       ];
-    };
+    nixosConfigurations = 
+      let
+        mkSystem = { platform, ...}:
+          let 
+            pkgs = import nixpkgs;
+          in
+            nixpkgs.lib.nixosSystem rec {
+              system = "aarch64-linux";
+              specialArgs = {inherit inputs;};
+              modules = [ 
+                ./nixos/${platform}/configuration.nix
+                home-manager.nixosModules.home-manager {
+                  home-manager = import ./nixos/${platform}/home-manager.nix;
+                }
+              ];
+            };
+      in
+      {
+        orbstack = mkSystem {
+          platform = "orbstack";
+        };
+      };
 
     # darwin
     darwinConfigurations = {
