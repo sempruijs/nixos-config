@@ -28,11 +28,27 @@
           in
             nixpkgs.lib.nixosSystem rec {
               system = "aarch64-linux";
-              specialArgs = {inherit inputs;};
+              specialArgs = {inherit inputs; inherit platform;};
               modules = [ 
                 ./${platform}/configuration.nix
                 home-manager.nixosModules.home-manager {
-                  home-manager = import ./home-manager.nix;
+                  home-manager = {
+                    useGlobalPkgs = true;
+                    useUserPackages = true;
+                    extraSpecialArgs = {
+                      platform = platform;
+                    };
+                    users.sem = {
+                      imports = [
+                        ./home.nix
+                        ./hm/nix.nix
+                        ./hm/helix.nix
+                        ./hm/git.nix
+                        ./hm/direnv.nix
+                        ./hm/nushell/nu.nix
+                      ];
+                    };
+                  };
                 }
               ];
             };

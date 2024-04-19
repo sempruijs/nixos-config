@@ -1,6 +1,9 @@
 {
   useGlobalPkgs = true;
   useUserPackages = true;
+  extraSpecialArgs = {
+    platform = "orbstack";
+  };
   users.sem = {
     imports = [
       ./home.nix

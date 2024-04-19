@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: {
+{ config, pkgs, platform, ...}: {
   home = {
     username = "sem";
     # homeDirectory = "/home/sem";
@@ -14,6 +14,10 @@
       neofetch
       lazygit
       direnv
-    ];
+    ] 
+    ++ 
+    (if platform == "utm" then [
+      emacsPackages.emacspeak
+    ] else []);
   };
 } 
