@@ -46,6 +46,7 @@
                         ./hm/git.nix
                         ./hm/direnv.nix
                         ./hm/nushell/nu.nix
+                        ./hm/emacs/emacs.nix
                       ];
                     };
                   };
