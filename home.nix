@@ -18,6 +18,7 @@
     ++ 
     (if platform == "utm" then [
       emacsPackages.emacspeak
+      kitty
     ] else []);
   };
 } 
