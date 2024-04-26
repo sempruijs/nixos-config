@@ -17,6 +17,8 @@
     helix.url = "github:helix-editor/helix";
     randaam-cli.url = "github:sempruijs/randaam-cli";
     yazi.url = "github:sxyazi/yazi";
+
+    tools.url = "github:sempruijs/tools";
   }; 
 
   outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, ... }@inputs: {

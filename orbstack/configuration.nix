@@ -92,6 +92,9 @@ with lib;
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default
     inputs.yazi.packages.aarch64-linux.default
+
+    inputs.tools.packages.aarch64-linux.audio-from-yt
+    inputs.tools.packages.aarch64-linux.qrcode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
