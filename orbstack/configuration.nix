@@ -94,6 +94,7 @@ with lib;
     inputs.yazi.packages.aarch64-linux.default
 
     inputs.tools.packages.aarch64-linux.audio-from-yt
+    inputs.tools.packages.aarch64-linux.to-chords
     inputs.tools.packages.aarch64-linux.qrcode
   ];
 
