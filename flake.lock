@@ -507,11 +507,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1714319696,
-        "narHash": "sha256-37MMCMfH4zf64LM6I2ciibPdH8q6KKh9beUSZvbnLyg=",
+        "lastModified": 1714320745,
+        "narHash": "sha256-trQlHf7w6K+V2VSnAYFAfDYerKjNSVGvpw7RjZwXXmk=",
         "owner": "sempruijs",
         "repo": "tools",
-        "rev": "71e4b5902cb594bc7b9b55c8ef8aeb2232616dd5",
+        "rev": "64d33f313e4c9ba4f30d99e20b6090a1f995aa2e",
         "type": "github"
       },
       "original": {
