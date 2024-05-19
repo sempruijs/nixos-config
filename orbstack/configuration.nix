@@ -88,6 +88,7 @@ with lib;
     flyctl
     delta
     emacs
+    nil
 
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default

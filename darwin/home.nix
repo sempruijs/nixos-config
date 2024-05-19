@@ -26,6 +26,7 @@
         pandoc
         bottom
         yazi
+        ghc
     ]);
 
     # Hide "last login" message on new terminal.
