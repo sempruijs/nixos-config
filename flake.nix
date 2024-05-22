@@ -61,7 +61,8 @@
                 ./modules/orbstack.nix
                 ./modules/orbstack/configuration.nix
               ] else (if platform == "utm" then [
-                ./modules/configuration.nix
+                ./modules/utm/configuration.nix
+                ./modules/utm/hardware-configuration.nix
               ] else []));
             };
       in
