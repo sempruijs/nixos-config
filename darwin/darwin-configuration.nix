@@ -19,7 +19,7 @@
     gnumake
     coreutils
     cmake 
-    element-desktop
+    # element-desktop
     vscodium
     kitty
   ];
