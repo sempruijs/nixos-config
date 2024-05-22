@@ -51,7 +51,11 @@
                         ./hm/direnv.nix
                         ./hm/nushell/nu.nix
                         ./hm/emacs/emacs.nix
-                      ];
+                      ]
+                      ++
+                      (if platform == "utm" then [
+                        ./hm/kitty.nix
+                      ] else []);
                     };
                   };
                 }

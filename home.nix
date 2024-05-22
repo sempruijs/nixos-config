@@ -1,7 +1,9 @@
 { config, pkgs, platform, ...}: {
   home = {
     username = "sem";
-    # homeDirectory = "/home/sem";
+
     stateVersion = "23.11";
-  };
+  } // (if platform == "utm" then {
+    homeDirectory = "/home/sem";
+  } else {});
 } 
