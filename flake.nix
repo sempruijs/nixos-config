@@ -32,8 +32,9 @@
               system = "aarch64-linux";
               specialArgs = {inherit inputs; inherit platform;};
               modules = [ 
-                ./${platform}/configuration.nix
+                # ./${platform}/configuration.nix
                 ./modules/packages.nix
+                ./modules/nix.nix
                 home-manager.nixosModules.home-manager {
                   home-manager = {
                     useGlobalPkgs = true;
@@ -58,7 +59,10 @@
               ++ 
               (if platform == "orbstack" then [
                 ./modules/orbstack.nix
-              ] else []);
+                ./modules/orbstack/configuration.nix
+              ] else (if platform == "utm" then [
+                ./modules/configuration.nix
+              ] else []));
             };
       in
       {
