@@ -19,9 +19,11 @@
     yazi.url = "github:sxyazi/yazi";
 
     tools.url = "github:sempruijs/tools";
+
+    doom.url = "github:nix-community/nix-doom-emacs";
   }; 
 
-  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, doom, ... }@inputs: {
     nixosConfigurations = 
       let
         mkSystem = { platform, ...}:
@@ -84,6 +86,7 @@
     darwinConfigurations = {
         default = darwin.lib.darwinSystem {
             system = "aarch64-darwin";
+            specialArgs = {inherit inputs;};
             modules = [
               ./darwin/darwin-configuration.nix
               home-manager.darwinModules.home-manager {

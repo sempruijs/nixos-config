@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ inputs, config, pkgs, ... }: 
 {    
   nix = {
     extraOptions = ''
@@ -22,6 +22,8 @@
     # element-desktop
     vscodium
     kitty
+
+    inputs.doom.packages.aarch64-darwin.default
   ];
 
   environment.variables = {
