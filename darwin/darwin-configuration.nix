@@ -23,7 +23,9 @@
     vscodium
     kitty
 
-    inputs.doom.packages.aarch64-darwin.default
+    # inputs.doom.packages.aarch64-darwin.default
+    emacs29
+    sox
   ];
 
   environment.variables = {
