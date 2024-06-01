@@ -19,11 +19,9 @@
     yazi.url = "github:sxyazi/yazi";
 
     tools.url = "github:sempruijs/tools";
-
-    doom.url = "github:nix-community/nix-doom-emacs";
   }; 
 
-  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, doom, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi,  ... }@inputs: {
     nixosConfigurations = 
       let
         mkSystem = { platform, ...}:
