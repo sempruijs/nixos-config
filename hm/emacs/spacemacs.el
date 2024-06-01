@@ -1,3 +1,4 @@
+''
 (load-file "/Users/sem/.emacs.d/emacspeak/lisp/emacspeak-setup.el")
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
@@ -599,3 +600,4 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  )
 )
+''

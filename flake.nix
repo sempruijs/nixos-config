@@ -50,7 +50,6 @@
                         ./hm/git.nix
                         ./hm/direnv.nix
                         ./hm/nushell/nu.nix
-                        ./hm/emacs/emacs.nix
                       ]
                       ++
                       (if platform == "utm" then [
@@ -104,6 +103,7 @@
                     ./hm/direnv.nix
                     ./hm/lazygit.nix
                     ./hm/nushell/nu.nix
+                    ./hm/emacs/spacemacs.nix
                   ];
                 };
                 home-manager.extraSpecialArgs = { 
