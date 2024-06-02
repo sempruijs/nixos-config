@@ -1,5 +1,10 @@
 ''
+;; load emacspeak
 (load-file "/Users/sem/.emacs.d/emacspeak/lisp/emacspeak-setup.el")
+
+;; set default speeking rate for emacspeak
+(dtk-set-rate 400 'global)
+
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
