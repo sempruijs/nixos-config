@@ -5,6 +5,9 @@
 ;; set default speeking rate for emacspeak
 (dtk-set-rate 400 'global)
 
+;; set dfeault font size
+(set-face-attribute 'default nil :height 250)
+
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
