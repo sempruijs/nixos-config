@@ -57,7 +57,6 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      org
-     games
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
