@@ -12,6 +12,8 @@
 (setq-default truncate-partial-width-windows nil)
 (setq-default truncate-lines t)
 
+(global-font-lock-mode 0)
+
 
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
