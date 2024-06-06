@@ -8,6 +8,11 @@
 ;; set dfeault font size
 (set-face-attribute 'default nil :height 250)
 
+;; turn off linewrap
+(setq-default truncate-partial-width-windows nil)
+(setq-default truncate-lines t)
+
+
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
