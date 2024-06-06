@@ -5,8 +5,8 @@
 ;; set default speeking rate for emacspeak
 (dtk-set-rate 400 'global)
 
-;; set dfeault font size
-(set-face-attribute 'default nil :height 250)
+;; set large font size
+(set-face-attribute 'default nil :height 650)
 
 ;; turn off linewrap
 (setq-default truncate-partial-width-windows nil)
