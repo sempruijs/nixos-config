@@ -12,8 +12,12 @@
 (setq-default truncate-partial-width-windows nil)
 (setq-default truncate-lines t)
 
+;; turn off syntax highlighting
 (global-font-lock-mode 0)
 
+;; Turn off mode line
+;; ()setq-default mode-line-format nil)
+(add-hook 'after-change-major-mode-hook 'hidden-mode-line-mode)
 
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
