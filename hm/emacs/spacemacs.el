@@ -16,8 +16,13 @@
 (global-font-lock-mode 0)
 
 ;; Turn off mode line
-;; ()setq-default mode-line-format nil)
 (add-hook 'after-change-major-mode-hook 'hidden-mode-line-mode)
+
+;; Hide dired details by default
+(add-hook 'dired-mode-hook
+          (lambda ()
+            (dired-hide-details-mode)
+            (dired-sort-toggle-or-edit)))
 
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
