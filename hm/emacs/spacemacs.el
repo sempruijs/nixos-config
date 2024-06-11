@@ -28,6 +28,9 @@
 (setq hscroll-margin 10)
 (setq hscroll-step 1)
 
+;; open magit status in full screen
+(setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
+
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
