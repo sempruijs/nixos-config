@@ -3,7 +3,7 @@
 (load-file "/Users/sem/.emacs.d/emacspeak/lisp/emacspeak-setup.el")
 
 ;; set default speeking rate for emacspeak
-(dtk-set-rate 400 'global)
+(dtk-set-rate 500 'global)
 
 ;; set large font size
 (set-face-attribute 'default nil :height 650)
@@ -23,6 +23,10 @@
           (lambda ()
             (dired-hide-details-mode)
             (dired-sort-toggle-or-edit)))
+
+;; set horizontal scroll per character
+(setq hscroll-margin 10)
+(setq hscroll-step 1)
 
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
