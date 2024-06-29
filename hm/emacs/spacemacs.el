@@ -71,8 +71,7 @@ This function should only modify configuration layer settings."
      haskell
      html
      css
-     nix
-  
+     nixos
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -87,6 +86,8 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      org
+     shell
+     ;; org-roam
      themes-megapack
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -642,4 +643,8 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  )
 )
+
+(setq-default dotspacemacs-configuration-layers '(
+  (org :variables
+     org-enable-roam-support t)))
 ''
