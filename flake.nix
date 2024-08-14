@@ -107,7 +107,8 @@
                   ];
                 };
                 home-manager.extraSpecialArgs = { 
-                    inherit inputs; 
+                    inherit inputs;
+                    platform = "darwin";
                     # pkgs-unstable = import inputs.nixpkgs-unstable { system = "aarch64-darwin"; config.allowUnfree = true; };
                 };
               }
