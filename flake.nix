@@ -95,14 +95,14 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.sem = {
                   imports = [
+                    ./hm/nushell/nu.nix
                     ./darwin/home.nix
                     ./hm/nix.nix
                     ./hm/helix.nix
-                    ./hm/git.nix
+                    # ./hm/git.nix
                     ./hm/kitty.nix
                     ./hm/direnv.nix
                     ./hm/lazygit.nix
-                    ./hm/nushell/nu.nix
                     ./hm/emacs/spacemacs.nix
                   ];
                 };
