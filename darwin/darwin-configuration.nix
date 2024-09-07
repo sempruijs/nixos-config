@@ -21,7 +21,7 @@
     cmake 
     # element-desktop
     vscodium
-    kitty
+    # kitty
 
     # inputs.doom.packages.aarch64-darwin.default
     emacs29
