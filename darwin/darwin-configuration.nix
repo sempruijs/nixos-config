@@ -20,7 +20,6 @@
     coreutils
     cmake 
     # element-desktop
-    vscodium
     # kitty
 
     # inputs.doom.packages.aarch64-darwin.default
