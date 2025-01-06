@@ -95,7 +95,7 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.sem = {
                   imports = [
-                    # ./hm/nushell/nu.nix
+                    ./hm/nushell/nu.nix
                     ./darwin/home.nix
                     ./hm/nix.nix
                     ./hm/helix.nix

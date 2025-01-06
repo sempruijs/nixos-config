@@ -20,7 +20,7 @@
     coreutils
     cmake 
     # element-desktop
-    # kitty
+    kitty
 
     # inputs.doom.packages.aarch64-darwin.default
     emacs29
