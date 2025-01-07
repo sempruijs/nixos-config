@@ -27,7 +27,6 @@
         yazi
         # nerdfonts
         ghc
-        # ghostty
     ]);
 
     # Hide "last login" message on new terminal.

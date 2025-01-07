@@ -100,7 +100,7 @@
                     ./hm/nix.nix
                     ./hm/helix.nix
                     # ./hm/git.nix
-                    # ./hm/kitty.nix
+                    ./hm/kitty.nix
                     ./hm/direnv.nix
                     ./hm/lazygit.nix
                     # ./hm/emacs/spacemacs.nix
