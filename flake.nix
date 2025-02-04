@@ -106,6 +106,7 @@
                     # ./hm/nushell/nu.nix
                     ./darwin/home.nix
                     ./hm/nix.nix
+                    ./hm/zsh.nix
                     ./hm/helix.nix
                     # ./hm/git.nix
                     ./hm/kitty.nix

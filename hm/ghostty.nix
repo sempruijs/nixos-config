@@ -24,17 +24,17 @@
     palette = 3=#ffbf7a
     palette = 11=#ffbf7a
     # blue
-    palette = 4=#82aaff
-    palette = 12=#82aaff
+    palette = 4=#000000
+    palette = 12=#000000
     # purple
-    palette = 5=#c792ea
-    palette = 13=#c792ea
+    palette = 5=#000000
+    palette = 13=#000000
     # aqua
-    palette = 6=#4ff2f8
-    palette = 14=#4ff2f8
+    palette = 6=#000000
+    palette = 14=#000000
     # white
-    palette = 7=#7c8eac
-    palette = 15=#c5cee0
+    palette = 7=#ffffff
+    palette = 15=#ffffff
     # extra
     palette = 16=#ffbf7a
     palette = 17=#ff5874
