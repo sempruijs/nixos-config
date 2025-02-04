@@ -19,9 +19,11 @@
     yazi.url = "github:sxyazi/yazi";
 
     tools.url = "github:sempruijs/tools";
-  }; 
 
-  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi,  ... }@inputs: {
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
+  };
+
+  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, vscode-server, ... }@inputs: {
     nixosConfigurations = 
       let
         mkSystem = { platform, ...}:
@@ -49,7 +51,8 @@
                         ./hm/helix.nix
                         # ./hm/git.nix
                         ./hm/direnv.nix
-                        ./hm/nushell/nu.nix
+                        ./hm/zsh.nix
+                        # ./hm/nushell/nu.nix
                       ]
                       ++
                       (if platform == "utm" then [
@@ -64,6 +67,10 @@
                 ./modules/orbstack.nix
                 ./modules/orbstack/configuration.nix
                 ./modules/orbstack/lxd.nix
+                vscode-server.nixosModules.default
+                ({ config, pkgs, ... }: {
+                  services.vscode-server.enable = true;
+                })
               ] else (if platform == "utm" then [
                 ./modules/utm/configuration.nix
                 ./modules/utm/hardware-configuration.nix

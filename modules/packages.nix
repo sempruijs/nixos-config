@@ -6,7 +6,7 @@
     curl
     git
     gh
-    nushell
+    # nushell
     zellij
     direnv
     lazygit
