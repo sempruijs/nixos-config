@@ -18,6 +18,7 @@
     delta
     emacs
     nil
+    zsh
 
     inputs.helix.packages.aarch64-linux.default
     inputs.randaam-cli.packages.aarch64-linux.default

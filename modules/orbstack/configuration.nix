@@ -7,6 +7,8 @@
 with lib;
 
 {
+  programs.zsh.enable = true;
+
   imports =
     [ # Include the default lxd configuration.
       "${modulesPath}/virtualisation/lxc-container.nix"
