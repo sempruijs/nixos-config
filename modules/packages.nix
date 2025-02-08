@@ -28,6 +28,8 @@
     inputs.tools.packages.aarch64-linux.to-chords
     inputs.tools.packages.aarch64-linux.qrcode
     inputs.tools.packages.aarch64-linux.update-deps-pr
+
+    inputs.book-notes-generator.packages.aarch64-linux.default
   ]
   ++
   (if platform == "utm" then [
