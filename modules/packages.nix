@@ -30,6 +30,7 @@
     inputs.tools.packages.aarch64-linux.update-deps-pr
 
     inputs.book-notes-generator.packages.aarch64-linux.default
+    inputs.aider-chat.legacyPackages.aarch64-linux.aider-chat
   ]
   ++
   (if platform == "utm" then [

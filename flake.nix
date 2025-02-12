@@ -23,9 +23,22 @@
     vscode-server.url = "github:nix-community/nixos-vscode-server";
 
     book-notes-generator.url = "github:sempruijs/book-notes-generator";
+
+    aider-chat.url = "github:cor/nixpkgs/update-aider-chat";
   };
 
-  outputs = { self, nixpkgs, home-manager, darwin, helix, yazi, vscode-server, book-notes-generator, ... }@inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    darwin,
+    helix,
+    yazi,
+    vscode-server,
+    book-notes-generator,
+    aider-chat,
+    ...
+  }@inputs: {
     nixosConfigurations = 
       let
         mkSystem = { platform, ...}:
