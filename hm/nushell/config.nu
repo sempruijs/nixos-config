@@ -11,7 +11,7 @@ alias cr = cargo run
 alias ck = cargo check
 alias ct = cargo test
 
-alias h = cd /Users/sem
+alias h = cd /Users/thomasmiddelbos
 
 alias nix-update = nix flake lock --update-input
 

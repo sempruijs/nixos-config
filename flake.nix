@@ -59,7 +59,7 @@
                     extraSpecialArgs = {
                       platform = platform;
                     };
-                    users.sem = {
+                    users.thomasmiddelbos = {
                       imports = [
                         ./home.nix
                         ./hm/nix.nix
@@ -110,13 +110,13 @@
             modules = [
               ./darwin/darwin-configuration.nix
               home-manager.darwinModules.home-manager {
-                users.users.sem = {
-                  name = "sem";
-                  home = "/Users/sem";
+                users.users.thomasmiddelbos = {
+                  name = "thomasmiddelbos";
+                  home = "/Users/thomasmiddelbos";
                 };
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
-                home-manager.users.sem = {
+                home-manager.users.thomasmiddelbos = {
                   imports = [
                     # ./hm/nushell/nu.nix
                     ./darwin/home.nix
