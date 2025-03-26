@@ -1,12 +1,12 @@
 { inputs, pkgs, ... }:
 {
   users.users.thomasmiddelbos = {
-    isNormalUser = true;
+    # isNormalUser = true;
     extraGroups = [ 
       "networkmanager" 
       "wheel"
       "docker" 
     ];
-    shell = pkgs.zsh;
-   }
+    # shell = pkgs.zsh;
+   };
 }

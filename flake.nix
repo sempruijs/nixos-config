@@ -51,7 +51,7 @@
               modules = [ 
                 ./modules/packages.nix
                 ./modules/nix.nix
-                ./modules/sem.nix
+                ./modules/thomas.nix
                 home-manager.nixosModules.home-manager {
                   home-manager = {
                     useGlobalPkgs = true;
@@ -66,7 +66,7 @@
                         ./hm/helix.nix
                         # ./hm/git.nix
                         ./hm/direnv.nix
-                        ./hm/zsh.nix
+                        # ./hm/zsh.nix
                         ./hm/ghostty.nix
                         # ./hm/nushell/nu.nix
                       ]
