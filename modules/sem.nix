@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 {
-  users.users.sem = {
+  users.users.thomasmiddelbos = {
     isNormalUser = true;
     extraGroups = [ 
       "networkmanager" 
@@ -8,5 +8,5 @@
       "docker" 
     ];
     shell = pkgs.zsh;
-  };
+   }
 }
