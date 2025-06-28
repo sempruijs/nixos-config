@@ -6,6 +6,7 @@
         nushell
         git 
         git-lfs
+        neovim
         gh
         lazygit
         neofetch
