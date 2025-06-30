@@ -3,21 +3,13 @@
     home.stateVersion = "22.05";
 
     home.packages = (with pkgs; [
-        nushell
         git 
         git-lfs
-        neovim
         gh
         lazygit
         neofetch
         pandoc
-        haskellPackages.latex
-        librsvg
-        python3
-        texlive.combined.scheme-full        
         tree
-        nodePackages.webpack
-        slides
         ripgrep
         bat
         unixtools.watch

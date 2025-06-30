@@ -23,7 +23,6 @@
     kitty
 
     # inputs.doom.packages.aarch64-darwin.default
-    emacs29
     sox
   ];
 
@@ -41,7 +40,6 @@
   # environment.darwinConfig = "$HOME/.config/nixpkgs/darwin/configuration.nix";
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
