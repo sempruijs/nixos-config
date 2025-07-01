@@ -50,5 +50,8 @@
     # CURSOR
     cursor-color = #000000
     cursor-text = #ffffff
+
+    # Fix sending shift+enter for Claude Code
+    keybind = shift+enter=text:\x1b\r
   '';
 }
