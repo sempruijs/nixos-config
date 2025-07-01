@@ -12,7 +12,7 @@
       lg = "lazygit";
       pbcopyy = "xclip -selection c"; # macOS' pbcopy equivalent
       update-time = "sudo date -s \"$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z\"";
-      update = if platform == "darwin" then "darwin-rebuild switch --flake .#default" else "sudo nixos-rebuild switch --flake .#orbstack";
+      update = if platform == "darwin" then "sudo darwin-rebuild switch --flake .#default" else "sudo nixos-rebuild switch --flake .#orbstack";
       h = "cd /Users/sem";
       cr = "cargo run";
       ck = "cargo check";

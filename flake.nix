@@ -108,6 +108,9 @@
             system = "aarch64-darwin";
             specialArgs = {inherit inputs;};
             modules = [
+              {
+                nixpkgs.config.allowUnfree = true;
+              }
               ./darwin/darwin-configuration.nix
               home-manager.darwinModules.home-manager {
                 users.users.sem = {

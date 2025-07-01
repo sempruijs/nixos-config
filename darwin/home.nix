@@ -20,6 +20,7 @@
         yazi
         # nerdfonts
         ghc
+        claude-code
     ]);
 
     # Hide "last login" message on new terminal.
