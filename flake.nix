@@ -49,6 +49,9 @@
               system = "aarch64-linux";
               specialArgs = {inherit inputs; inherit platform;};
               modules = [ 
+                {
+                  nixpkgs.config.allowUnfree = true;
+                }
                 ./modules/packages.nix
                 ./modules/nix.nix
                 ./modules/sem.nix

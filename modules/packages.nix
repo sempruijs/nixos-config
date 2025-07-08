@@ -21,6 +21,7 @@
       emacs
       nil
       zsh
+      claude-code
 
       inputs.helix.packages.aarch64-linux.default
       inputs.randaam-cli.packages.aarch64-linux.default
