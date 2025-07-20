@@ -18,7 +18,7 @@
       ck = "cargo check";
     };
     initExtra = ''
-      PS1="${if platform == "darwin" then "mac > " else "nix > "}"
+      PS1="${if platform == "darwin" then "🍎" else "💎"}%1~ > "
     '' + (if platform == "darwin" then ''
         # Check if SSH_AUTH_SOCK is set and points to the default macOS agent
         if [[ -z "$SSH_AUTH_SOCK" || "$SSH_AUTH_SOCK" == /private/tmp/com.apple.launchd.* ]]; then
