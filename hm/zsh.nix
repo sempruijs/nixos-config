@@ -17,8 +17,9 @@
       cr = "cargo run";
       ck = "cargo check";
     };
-    initExtra =
-      if platform == "darwin" then ''
+    initExtra = ''
+      PS1="${if platform == "darwin" then "mac > " else "nix > "}"
+    '' + (if platform == "darwin" then ''
         # Check if SSH_AUTH_SOCK is set and points to the default macOS agent
         if [[ -z "$SSH_AUTH_SOCK" || "$SSH_AUTH_SOCK" == /private/tmp/com.apple.launchd.* ]]; then
           # No forwarded agent, use 1Password agent
@@ -31,6 +32,6 @@
           ln -sfv "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock; 
         fi
         eval "$(direnv hook zsh)"
-      '';
+      '');
   };
 }
