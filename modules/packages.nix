@@ -25,6 +25,7 @@
 
       inputs.helix.packages.aarch64-linux.default
       inputs.randaam-cli.packages.aarch64-linux.default
+      inputs.bible-computer.packages.aarch64-linux.bible-verify
       # inputs.yazi.packages.aarch64-linux.default
 
       inputs.tools.packages.aarch64-linux.audio-from-yt

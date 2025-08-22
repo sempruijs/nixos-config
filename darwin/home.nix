@@ -21,6 +21,8 @@
         # nerdfonts
         ghc
         claude-code
+
+         inputs.bible-computer.packages.aarch64-linux.bible-verify
     ]);
 
     # Hide "last login" message on new terminal.

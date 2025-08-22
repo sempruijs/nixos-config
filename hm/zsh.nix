@@ -17,7 +17,7 @@
       cr = "cargo run";
       ck = "cargo check";
     };
-    initExtra = ''
+    initContent = ''
       PS1="${if platform == "darwin" then "🍎" else "💎"}%1~ > "
     '' + (if platform == "darwin" then ''
         # Check if SSH_AUTH_SOCK is set and points to the default macOS agent

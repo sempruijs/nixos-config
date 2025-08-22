@@ -25,6 +25,8 @@
     book-notes-generator.url = "github:sempruijs/book-notes-generator";
 
     aider-chat.url = "github:cor/nixpkgs/update-aider-chat";
+
+    bible-computer.url = "github:biblecomputer/bible";
   };
 
   outputs = {
@@ -34,6 +36,7 @@
     darwin,
     helix,
     yazi,
+    bible-computer,
     vscode-server,
     book-notes-generator,
     aider-chat,
